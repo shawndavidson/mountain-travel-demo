@@ -1,0 +1,246 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+      background-image: url('../img/main.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 600px;     
+      font-family: quicksand;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 800;
+    color: white;
+    margin: 0;
+    padding: 25px;
+
+}
+
+h2 {
+    margin: 0;  
+    padding: 25px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.navleft {
+    justify-content: flex-start;
+}
+
+.navright {
+    justify-content: flex-end;
+}
+
+.main {
+    color: white; 
+    display: flex;
+    min-height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    text-transform: capitalize;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 0;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background: #258FE4;
+}
+
+button:hover {
+    background: rgb(84, 161, 224);
+}
+
+.somework, .featuresandservices, .testimonials, .newsletter, .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.somework p, .featuresandservices p, .testimonials p {
+   width: 70vw;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+hr {
+    height: 2px;
+    background: #2196F3;
+    width: 200px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 500px;
+}
+
+.gallery-row {
+    width: 80vw;
+    flex-direction: row;
+    height: 300px;
+    padding: 20px;
+}
+
+.gallery-row img {
+    height: 300px;
+    margin: 10px 20px;
+}
+
+img.mountain1, img.mountain4 {
+    width: 30%;
+}
+
+img.mountain2, img.mountain3 {
+    width: 50%;
+}
+
+.featuresandservices, .newsletter {
+    flex: 1 1 600px;
+    background: #F7F7F7;
+}
+
+.featureandservices-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 900px;
+}
+
+.featureandservicesitem {
+    flex-basis: 300px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.testimonialsitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+p.featuredescription {
+    width: 90%;
+}
+
+.testimonialsitem p {
+    text-align: center;
+}
+
+.newsletter {
+    justify-content: center;
+}
+
+.newsletterform {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 50px; 
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.newsletterform input.email {
+    flex: 1 1 500px;
+    margin: 10px;
+    padding: 10px;
+    font-size: larger;
+}
+
+.newsletterform button {
+    width: 600px;
+    min-height: 50px;
+    /* align-self: center; */
+}
+
+.newsletter p {
+    max-width: 900px;
+}
+
+.footer {
+    background: #404A4F;
+    height: 300px;
+    justify-content: center;
+}
+
+.footer p {
+    color: #9EA3A6;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin:  0px 0px 10px;
+    font-family: sans-serif;
+}
+
+.footer p em {
+    color: #BDC1C2
+}
+
+.footer p em:hover {
+    color: white;
+}
+
+.footer-social-row {
+    display: flex;
+    flex-basis: 50px;
+    width: 40%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-social-row i {
+    margin: 0px 10px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    .featureandservices-row, .gallery-row {
+        flex-direction: column;
+    }
+ 
+    .newsletterform {
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: stretch;
+        max-height: 100px;
+    }
+
+    .gallery {
+        min-height: 1000px;
+    }
+
+    img.mountain1, img.mountain2, img.mountain3, img.mountain4 {
+        width: 100%;
+    }
+}
+
